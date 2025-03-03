@@ -1,0 +1,141 @@
+/* src/Dashboard.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow */
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: #dc3545; /* Red logout button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.add-transaction-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent input background */
+  color: white; /* White text */
+}
+
+/* Style for dropdown options */
+.form-group select option {
+  background-color: black; /* Black background for options */
+  color: white; /* White text for options */
+}
+
+.add-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent table background */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow */
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  color: white; /* White text */
+}
+
+.transactions-table th {
+  background-color: #007bff; /* Blue header background */
+  color: white; /* White text */
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #dc3545; /* Red delete button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
